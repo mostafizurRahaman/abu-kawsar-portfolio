@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 30 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 160 84% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio colors */
+    --emerald-light: 160 84% 95%;
+    --emerald: 160 84% 39%;
+    --emerald-dark: 160 84% 30%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(160 84% 39% / 0.1), hsl(200 84% 60% / 0.1));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(30 40% 99%));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(160 84% 39% / 0.1);
+    --shadow-medium: 0 8px 30px -6px hsl(160 84% 39% / 0.15);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 160 84% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 160 84% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 160 84% 45%;
+
+    /* Dark mode custom colors */
+    --emerald-light: 160 84% 20%;
+    --emerald: 160 84% 45%;
+    --emerald-dark: 160 84% 55%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(160 84% 45% / 0.1), hsl(200 84% 60% / 0.1));
+    --gradient-card: linear-gradient(135deg, hsl(222 47% 8%), hsl(222 47% 10%));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(160 84% 45% / 0.2);
+    --shadow-medium: 0 8px 30px -6px hsl(160 84% 45% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
