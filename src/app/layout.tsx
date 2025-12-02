@@ -68,7 +68,7 @@ export default function RootLayout({
           poppins.className
         )}
       >
-        <div className="fixed top-4 right-20 md:right-4 z-50">
+        <div className="fixed  top-7 md:top-4 right-20 md:right-4 z-50">
           <button
             onClick={toggleTheme}
             className="p-1 rounded-lg bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
